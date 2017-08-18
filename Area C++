@@ -13,7 +13,8 @@ int main()
 	cout << "introduzca la altura " << endl;
 	cin >> altura;
 	cout << "introduzca base" << endl;
-	cin >> base; area = altura*base;
+	cin >> base;
+	area = altura*base;
 	cout << "el area es" << endl;
 	cout << area << endl;
 	getch();
