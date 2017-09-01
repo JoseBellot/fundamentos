@@ -1,0 +1,17 @@
+// Votar.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+using namespace std;
+void main(){
+	int e,x;
+	cout<<"Ingrese su edad: ";
+	cin>>e;
+	if (e>=18)
+		cout<<"Puede Votar";
+	else 
+		cout<<"No Puede Votar";
+	getch();
+}
