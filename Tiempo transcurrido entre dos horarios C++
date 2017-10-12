@@ -2,13 +2,13 @@
 #include <iostream>
 #include "conio.h"
 using namespace std;
-void main();
+void main()
 {
 int h1,h2,h,m1,m2,m,s1,s2,s,x,y,z;
 cout<<"Ingrese el primer horario:";
-cin>>h1>>",">>m1>>",">>s1;
+cin>>h1>>m1>>s1;
 cout<<"Ingrese el segundo horario:";
-cin>>h2>>",">>m2>>",">>s2;
+cin>>h2>>m2>>s2;
 x=(h1*3600)+(m1*60)+s1;
 y=(h2*3600)+(m2*60)+s2;
 if (x<y) {
