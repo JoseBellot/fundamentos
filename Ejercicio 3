@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+int digito_menor (int n, int M, int d);
+void main (){
+int n, M, d;
+cout<<"Ingrese un numero : ";
+cin>>n;
+M=digito_menor(M,n,d);
+cout<<"el digito menor es : "<<M;
+getch ();
+}
+
+
+
+
+int digito_menor (int n, int M, int d)
+{
+int n,M,d;
+while (n!=0) {
+	d=n%10;
+	if (M>d){
+	M=d;
+	}
+	if (0==n%10){
+		if (0==n/10) {
+			M=0;
+			break;
+		}
+	}
+	n=n/10;
+}
+return M;
+}
