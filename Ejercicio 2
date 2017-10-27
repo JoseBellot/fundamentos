@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+float serie(float S,int N, int X);
+void main (){
+int N, X, factorial;
+float S=(3.1416/5), I, P, i;
+S=(3.1416/5);
+cout<<"Ingrese el valor de N : ";
+cin>>N;
+cout<<"Ingrese el valor de X : ";
+cin>>X;
+S=serie(S, N, X);
+cout<<"El valor es : "<<S<<endl;
+getch ();
+}
+
+float serie(float S,int N, int X)
+{
+	int factorial, int J;
+float I, P, i;
+S=(3.1416/5);
+factorial=1;
+i=1;
+J=2;
+for(I=2;I<=N;I=I+2){
+	for(i=1;i<=J;i++){
+		factorial=factorial*1; }
+	J=J+2;
+	P=pow(X,i)/2;
+	P=P*(-1);
+	S=S+P;
+}
+cout<<S<<endl;
+return S;
+}
